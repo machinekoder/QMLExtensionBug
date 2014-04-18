@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/com/mycompany/qmlcomponents">
+        <file>TetsItem.qml</file>
+    </qresource>
+</RCC>
