@@ -1,4 +1,5 @@
-This project demonstrates a bug (or missing feature) with Qt Creator and QML extensions.
+This project demonstrates a bug (or missing feature) with Qt Creator and QML extensions. It is a slightly modified version
+of the Qt Quick 2 Extension template from Qt Creator 3.1
 
 Reproduce
 ~~~~~~~~~
@@ -6,7 +7,7 @@ Open the moduletest project with Qt Creator and compile it in Release mode. Then
 ----
 make install
 ----
-This will install a new QML extension to your Qt version. Then create navigate to the installed directory 
+This will install a new QML extension to your Qt version. Then create navigate to the installed directory (<Qt version dir>/qml/com/mycompany/qmlcomponents/)
 and create a plugins.qmltypes file with the following command:
 ----
 qmlplugindump com.mycompany.qmlcomponents 1.0 > plugins.qmltypes
