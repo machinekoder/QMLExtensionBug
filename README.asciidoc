@@ -1,0 +1,25 @@
+This project demonstrates a bug (or missing feature) with Qt Creator and QML extensions.
+
+Reproduce
+~~~~~~~~~
+Open the moduletest project with Qt Creator and compile it in Release mode. Then go to the build folder and run 
+----
+make install
+----
+This will install a new QML extension to your Qt version. Then create navigate to the installed directory 
+and create a plugins.qmltypes file with the following command:
+----
+qmlplugindump com.mycompany.qmlcomponents 1.0 > plugins.qmltypes
+----
+Then open the qmlproject qmltest and wait until Qt Creator
+has resolved all imports.
+
+Expected behavior
+~~~~~~~~~~~~~~~~~
+Imports work as expected and are recognized. Qt Quick Designer shows the imported visual items.
+
+
+Actual behavior
+~~~~~~~~~~~~~~~
+Imports from C++ plugins are recognized correctly. Imports from QML files are not recognized. Qt Quick Designer 
+shows no visual items from plugins at all.
