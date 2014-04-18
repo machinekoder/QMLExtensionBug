@@ -23,3 +23,9 @@ Actual behavior
 ~~~~~~~~~~~~~~~
 Imports from C++ plugins are recognized correctly. Imports from QML files are not recognized. Qt Quick Designer 
 shows no visual items from plugins at all.
+
+Links
+~~~~~
+https://bugreports.qt-project.org/browse/QTCREATORBUG-12089
+https://bugreports.qt-project.org/browse/QTCREATORBUG-12090
+http://qt-project.org/forums/viewthread/41611/
